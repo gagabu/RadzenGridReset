@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>RadzenGridReset</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Radzen.Blazor" Version="4.1.9" />
+<!--        <PackageReference Include="Radzen.Blazor" Version="3.20.8" />-->
+    </ItemGroup>
+</Project>

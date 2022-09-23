@@ -1,0 +1,18 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<RadzenDataGrid Data="@Data.OrderBy(x => x.Name)" TItem="Model" AllowSorting="true" AllowPaging="true" PageSize="5">
+	<Columns>
+		<RadzenDataGridColumn TItem="Model" Title="Name">
+			<Template Context="item">
+				<RadzenTextBox @bind-Value="item.Name" />
+			</Template>
+		</RadzenDataGridColumn>
+		<RadzenDataGridColumn TItem="Model" Title="Number">
+			<Template Context="item">
+				<RadzenNumeric @bind-Value="@item.Number"/>
+			</Template>
+		</RadzenDataGridColumn>
+	</Columns>
+</RadzenDataGrid>
